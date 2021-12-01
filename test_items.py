@@ -6,7 +6,7 @@ link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
 
 def test_add_to_cart_button_is_displayed(browser):
     browser.get(link)
-    time.sleep(5)
+    time.sleep(30)
     try:
         element = browser.find_element(By.XPATH, '//*[contains(@class,"btn-add-to-basket")]')
         #element = browser.find_element(By.XPATH, '//*[contains(@class,"btn-add-to-add")]')
